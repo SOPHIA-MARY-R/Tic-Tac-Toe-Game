@@ -16,7 +16,7 @@ public class TicTacToe implements ActionListener, MouseListener{
     Color color1 = new Color(236, 154, 83);
     Color color2 = new Color(255, 255, 255);
     Color color3 = new Color(252, 65, 65);
-    Color color4 = new Color(231, 112, 22);
+    //Color color4 = new Color(231, 112, 22);
 
     public TicTacToe(){
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,7 +25,7 @@ public class TicTacToe implements ActionListener, MouseListener{
         jFrame.setLayout(new BorderLayout());
 
         textField.setBackground(color2);
-        textField.setForeground(color1);
+        textField.setForeground(color3);
         textField.setFont(new Font("Ink Free", Font.BOLD, 40));
         textField.setHorizontalAlignment(JLabel.CENTER);
         textField.setVerticalAlignment(JLabel.CENTER);
@@ -145,7 +145,7 @@ public class TicTacToe implements ActionListener, MouseListener{
         for(int i=0; i<9; i++){
             buttons[i].setEnabled(false); //cannot play the game again
         }
-        textField.setText(winner + "Wins");
+        textField.setText(winner + " Wins");
         hasWon = true;
     }
 
